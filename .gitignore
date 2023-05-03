@@ -1,0 +1,69 @@
+# Arquivos gerados por ferramentas de construção
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyw
+*.egg-info/
+dist/
+build/
+*.egg
+*.log
+
+# Ambientes virtuais
+venv/
+env/
+ENV/
+.venv/
+.ENV/
+
+# Arquivos de configuração
+*.env
+.env
+.local
+*.ini
+*.cfg
+*.conf
+*.pyc
+
+# Dependências geradas por ferramentas de construção
+pip-selfcheck.json
+*.egg-info
+*.egg
+
+# Arquivos de mídia e dados grandes
+*.mp4
+*.mp3
+*.avi
+*.flv
+*.wmv
+*.mov
+*.swf
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.tif
+*.tiff
+*.bmp
+*.ico
+*.pdf
+*.psd
+*.ai
+*.eps
+*.svg
+*.doc
+*.docx
+*.xls
+*.xlsx
+*.csv
+*.json
+*.sqlite3
+
+# Outros
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+ehthumbs_vista.db
+ehthumbsXP.db

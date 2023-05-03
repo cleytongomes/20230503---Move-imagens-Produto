@@ -1,0 +1,4 @@
+[config]
+arquivo=file.csv
+pasta_origem=origem\
+pasta_destino=destino\
