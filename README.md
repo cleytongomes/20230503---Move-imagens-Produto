@@ -23,7 +23,10 @@ pasta_origem = caminho/para/pasta/origem
 pasta_destino = caminho/para/pasta/destino
 ```
 
-3 - Execute o programa com o comando python nome_do_programa.py na pasta raiz do projeto.
+3 - Execute o programa com o comando abaixo na pasta raiz do projeto.
+```
+python main.py
+```
 
 O programa percorre o arquivo CSV de produtos e verifica se a imagem correspondente a cada produto existe na pasta de origem. Se existir, a imagem é copiada para a pasta de destino. Se não existir, uma mensagem é exibida indicando que o produto não foi encontrado.
 
