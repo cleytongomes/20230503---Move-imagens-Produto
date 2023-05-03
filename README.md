@@ -13,6 +13,7 @@ O programa lê as configurações a partir do arquivo config.ini. As seguintes c
 Para utilizar este programa, você precisa ter Python 3 instalado em sua máquina.
 
 1 - Clone este repositório em sua máquina local.
+
 2 - Crie um arquivo config.ini na raiz do projeto e configure as seguintes opções:
 
 ```
