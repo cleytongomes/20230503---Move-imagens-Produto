@@ -2,3 +2,8 @@
 arquivo=file.csv
 pasta_origem=origem\
 pasta_destino=destino\
+redimensionar=True
+
+[resize]
+largura=1750
+altura=1750
