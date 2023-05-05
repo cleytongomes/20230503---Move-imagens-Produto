@@ -1,5 +1,5 @@
 # Copiando imagens de produtos
-Este é um programa em Python que lê um arquivo CSV com nomes de produtos e copia as imagens correspondentes da pasta de origem para a pasta de destino.
+Este é um programa em Python que lê um arquivo .CSV com nomes de produtos e copia as imagens correspondentes da pasta de origem para a pasta de destino.
 
 ## Configuração
 O programa lê as configurações a partir do arquivo config.ini. As seguintes configurações são necessárias:
