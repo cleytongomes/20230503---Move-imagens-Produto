@@ -22,7 +22,7 @@ largura = configparser.getint('resize', 'largura')
 @config(theme="dark")
 def main():
 
-    output.put_markdown('## DOWNLOAD DE PRODUTOS 3F')
+    output.put_markdown('## DOWNLOAD DE PRODUTOS')
 
     # Lista de produtos ajustada
     produtos = input.textarea("Nome dos produtos a serem baixados", rows=8, placeholder="Produtos que deseja realizar o download")
