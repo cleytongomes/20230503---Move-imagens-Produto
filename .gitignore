@@ -9,6 +9,7 @@ dist/
 build/
 *.egg
 *.log
+*.zip
 
 # Ambientes virtuais
 venv/
