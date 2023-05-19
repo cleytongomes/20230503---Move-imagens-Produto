@@ -36,22 +36,27 @@ def main():
     # Percorre os produtos listados
     for produto in tqdm.tqdm(lista_produtos, desc='Copiando imagens', unit=' Produtos'):
 
+        flag_encontrado = False
+
         # Ajusta o produto
         produto = produto.upper().replace('/', '_')
 
         # verifica se o produto existe como imagem na pasta origem
-        if (produto + '.jpg') in os.listdir(pasta_origem):
+        for extensao in ['.jpg', '.png']:
+            if (produto + extensao) in os.listdir(pasta_origem):
+                
+                flag_encontrado = True
+                
+                if redimensionar:
+                    # redimensiona imagem e move para pasta destino
+                    img = Image.open(os.path.join(pasta_origem, produto + extensao))
+                    img_resized = img.resize((largura, altura))
+                    img_resized.save(os.path.join(pasta_destino, produto + extensao))
+                else:
+                    # copia imagem para pasta destino
+                    shutil.copy(os.path.join(pasta_origem, produto + extensao), pasta_destino)
 
-            if redimensionar:
-                # redimensiona imagem e move para pasta destino
-                img = Image.open(os.path.join(pasta_origem, produto + '.jpg'))
-                img_resized = img.resize((largura, altura))
-                img_resized.save(os.path.join(pasta_destino, produto + '.jpg'))
-            else:
-                # copia imagem para pasta destino
-                shutil.copy(os.path.join(pasta_origem, produto + '.jpg'), pasta_destino)
-
-        else:
+        if flag_encontrado == False:
             output.put_markdown(f"- {produto} não encontrado")
             tqdm.tqdm.write('Produto não encontrado: ' + produto)
 
@@ -71,4 +76,4 @@ def main():
 
 
 # Inicia o servidor
-start_server(main, port=8082, debug=True)
+start_server(main, port=8083, debug=True)
