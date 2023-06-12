@@ -33,6 +33,9 @@ def main():
     shutil.rmtree(pasta_destino, ignore_errors=True)
     os.mkdir(pasta_destino)
 
+    # Retira os nomes duplicados com set
+    lista_produtos = list(set(lista_produtos))
+
     # Percorre os produtos listados
     for produto in tqdm.tqdm(lista_produtos, desc='Copiando imagens', unit=' Produtos'):
 
