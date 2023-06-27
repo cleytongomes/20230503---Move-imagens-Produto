@@ -17,6 +17,7 @@ env/
 ENV/
 .venv/
 .ENV/
+output/
 
 # Arquivos de configuração
 *.env
